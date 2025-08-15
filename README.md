@@ -1,15 +1,5 @@
 # Pain Point to Solution Agent Prototype
-
-## Overview
-A prototype for the Filum.ai "Pain Point to Solution Agent" that matches customer pain points with relevant Filum.ai features from a knowledge base (`features.json`).
-
-## Prerequisites
-- Python 3.8 or higher
-- No external libraries required (uses standard Python library)
-
-## Installation
-1. Clone or download this repository
-2. Ensure `features.json` and `agent.py` are in the same directory
+  
 
 ## Usage
 Run the agent via command line with JSON input:
