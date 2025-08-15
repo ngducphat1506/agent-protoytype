@@ -19,7 +19,7 @@ Example:
 }
 ```
 #### Rationale
-- pain_point: Captures the core issue in free-text form, enabling flexible user input for matching against features.
+- `pain_point`: Captures the core issue in free-text form, enabling flexible user input for matching against features.
 - Optional fields (industry, company_size, current_tools): Provide context to refine suggestions .
 - JSON format: Ensures structured input, easy parsing in Python, and compatibility with future integrations.
 
@@ -61,6 +61,19 @@ The agent processes input through the following steps:
 - Filter features with `relevance_score` > 20% (threshold).
 5. Sort Results: Sort filtered features by `relevance_score` (descending).
 6. Generate Output: Create JSON output with `suggested_solutions` and a static `summary`.
+
+#### Matching Approach
+- Method: Keyword-based matching.
+  - Tokenize `pain_point` into words ("struggling to collect customer feedback" → ["struggling", "collect", "customer", "feedback"]).
+  - Compare with `keywords` and `pain_points_addressed` of each feature.
+  - Calculate `relevance_score` = (number of matching tokens / number of pain point tokens) * 100.
+  - Example: For pain point "We're struggling to collect customer feedback consistently after a purchase" and feature "Automated Post-Purchase Surveys", matching tokens ["collect", "feedback", "purchase"] yield a high score.
+- Threshold: Only include features with `relevance_score` > 20% to filter irrelevant matches.
+- Sorting: Results are sorted by `relevance_score` to prioritize the best matches.
+
+#### Rationale
+- Keyword matching: Simple, fast, and effective for the small feature set (5 features). It leverages keywords and pain_points_addressed for accurate matching.
+- Threshold (20%): Ensures only relevant features are returned, avoiding noise.
 
 ## Usage
 Run the agent via command line with JSON input:
