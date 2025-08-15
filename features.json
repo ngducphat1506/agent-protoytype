@@ -1,0 +1,52 @@
+[
+  {
+    "feature_id": "voc_surveys_01",
+    "feature_name": "Automated Post-Purchase Surveys",
+    "category": "VoC - Surveys",
+    "description": "Thiết kế và triển khai khảo sát tự động sau mua hàng qua Web, Mobile, Zalo, SMS, Email, QR, POS.",
+    "keywords": ["survey", "post-purchase", "feedback", "automated", "email", "SMS", "collect"],
+    "pain_points_addressed": ["collect customer feedback consistently after a purchase", "inconsistent feedback collection"],
+    "how_it_helps": "Trigger surveys automatically via email/SMS after a transaction to gather consistent feedback.",
+    "more_info_link": ["https://filum.ai/en/products/voice-of-customer/survey"]
+  },
+  {
+    "feature_id": "ai_inbox_01",
+    "feature_name": "AI Agent for FAQ & First Response",
+    "category": "AI Customer Service - AI Inbox",
+    "description": "Hệ thống contact center nơi agent con người hợp tác với AI để xử lý câu hỏi lặp lại.",
+    "keywords": ["AI agent", "FAQ", "first response", "repetitive questions", "support agents", "overwhelmed"],
+    "pain_points_addressed": ["support agents overwhelmed by high volume of repetitive questions"],
+    "how_it_helps": "Deflects common queries and provides instant answers, freeing up human agents.",
+    "more_info_link": ["https://filum.ai/en/products/customer-service-ai/contact-center"]
+  },
+  {
+    "feature_id": "insights_experience_01",
+    "feature_name": "Customer Journey Experience Analysis",
+    "category": "Insights - Experience",
+    "description": "Phân tích trải nghiệm khách hàng qua các touchpoints với topic analysis chi tiết.",
+    "keywords": ["journey analysis", "friction points", "touchpoints", "frustration", "experience"],
+    "pain_points_addressed": ["no clear idea which customer touchpoints are causing the most frustration"],
+    "how_it_helps": "Identifies friction points by analyzing feedback and operational data across the journey.",
+    "more_info_link": ["https://filum.ai/en/products/insights/topic-analysis"]
+  },
+  {
+    "feature_id": "customer360_customers_01",
+    "feature_name": "Customer Profile with Interaction History",
+    "category": "Customer 360 - Customers & AI Inbox",
+    "description": "Quản lý cơ sở khách hàng và xem lịch sử tương tác toàn diện.",
+    "keywords": ["customer profile", "interaction history", "single view", "contact history"],
+    "pain_points_addressed": ["difficult to get a single view of a customer's interaction history"],
+    "how_it_helps": "Consolidates all touchpoints and past interactions for a comprehensive view.",
+    "more_info_link": ["https://filum.ai/en/products/customer-360/xprofile", "https://filum.ai/en/products/customer-service-ai/contact-center"]
+  },
+  {
+    "feature_id": "voc_analysis_01",
+    "feature_name": "AI-Powered Topic & Sentiment Analysis for VoC",
+    "category": "VoC - Conversations/Surveys, Insights - Experience",
+    "description": "Phân tích chủ đề và sentiment từ phản hồi text mở.",
+    "keywords": ["topic analysis", "sentiment analysis", "open-ended responses", "time-consuming", "themes"],
+    "pain_points_addressed": ["manually analyzing thousands of open-ended survey responses for common themes is too time-consuming"],
+    "how_it_helps": "Automatically extracts key topics and sentiment from text feedback.",
+    "more_info_link": ["https://filum.ai/products/voice-of-customer/conversation", "https://filum.ai/en/products/insights/topic-analysis"]
+  }
+]
